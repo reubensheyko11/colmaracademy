@@ -1,0 +1,525 @@
+
+/*////////////////////DEFAULT VALUES//////////////////////////////////*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    color: rgb(85, 84, 84);
+}
+
+
+
+
+/*////////////////////nav bar///////////////////////////////////////*/
+
+.logo-name {
+    margin-right: auto;
+    display: flex;
+}
+
+.logo {
+    display: block;
+    width: 32px;
+}
+
+.name {
+    align-items: center;
+    display: flex;
+}
+
+li, a {
+    font-weight: 500;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 24px;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline-block;
+    padding: 0px 16px;
+}
+
+
+.toggle-button{
+    display: none;
+}
+
+.toggle-button .campus {
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+.toggle-button .online {
+    display: inline-block;
+    padding: 0px 25px;
+    
+}
+
+.toggle-button .sign {
+    display: inline-block;
+    padding: 0px 25px;
+}
+
+
+@media (max-width: 770px) {
+    .toggle-button{
+        display: flex;
+
+    }
+
+    .nav-links li{
+        display: none;
+    }
+    .name{
+        display: none;
+    }
+}
+
+/*///////////////////////////////////////////////////////////////////////*/
+
+
+
+/*///////////////////body////////////////////////////////////////////////*/
+
+section {
+    display: grid;
+    
+}
+
+h1{
+    font-weight: 900;
+    font-size: 40px;
+    line-height: 1;
+    
+}
+
+/* Start Here */
+
+.start-here {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    background-color: rgb(207, 207, 207);
+    padding: 32px 24px;
+    grid-gap: 1px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.start-here img {
+    max-width: 100%; 
+     
+}
+.start-here div{
+    max-width: 100%;
+    padding-left: 10%;
+    
+    
+}
+
+.start-here h2 {
+    max-width: 80%;
+    padding: 24px 0px;
+    font-weight: 500;
+}
+
+button {
+    background-color: rgb(88, 85, 85);
+    color: white;
+    width: 80%;
+    padding: 8px 0px;
+    font-size: 25px;    
+    font-weight: bold;
+    border: none;
+}
+
+
+
+/* practicing */
+
+
+.practicing {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 1px;
+    background-color: rgb(241, 241, 233);
+    
+    
+}
+
+.practicing .image-box h1{
+    padding-top: 32px;
+}
+
+.practicing .image-box p {
+    padding-top: 24px;
+    padding-right: 25%;
+}
+.practicing img{
+    max-width: 100%;
+}
+
+.practicing .image-box{
+    padding: 32px 24px;
+    background-color: white;
+    
+    
+}
+
+
+.practicing .practice-column{
+    background-color: white;
+    
+    
+}
+
+ .practicing .practice-column div {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    text-align: center;
+    
+}
+
+.practicing .practice-column .orientation {
+    padding: 15px 0px;
+    
+}
+
+.practicing .practice-column .campus{
+    padding: 15px 0px 30px 0px;
+}
+
+.practicing .practice-column img {
+    padding: 16px;
+    height: auto;
+    
+    
+}
+.mobileimage {
+    display: none;
+}
+
+.practicing .practice-column .lecture {
+    background-color: rgb(212, 209, 209);
+    
+    
+}
+
+.practicing .practice-column .it {
+    display: inline-block;
+    text-align: left;
+    margin: auto 0px;
+    
+}
+
+.practicing .practice-column a {
+    color: rgb(70, 70, 240);
+}
+
+
+
+/* Learning */
+
+.learning {
+    background-color: rgb(212, 209, 209) ;
+    display: grid;
+    grid-template-rows: 8% 92%;
+    padding: 32px 72px;
+    
+}
+
+.learning .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.learning .blocks {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    padding: 32px 0px;
+    grid-gap: 32px;
+    margin: 0px auto;   
+    
+}
+
+.learning .blocks .learning-text {
+    padding: 16px;
+    max-width: 532px;
+    
+    
+}
+
+.learning .blocks div{
+    background-color:white ;
+    max-width: max-content;
+    height: auto;
+    
+}
+
+.learning .blocks div img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+     
+}
+
+
+/* exhibit */
+
+
+video {
+    max-width: 100%;
+}
+
+
+.exhibit {
+    display: grid;
+    grid-template-rows: 10% 90%;
+    border-bottom: 1px solid rgb(212, 209, 209);
+}
+
+.exhibit img {
+    max-width: 100%;
+    height: auto;
+    padding: 16px;
+}
+.exhibit .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 0px;
+    
+}
+
+.exhibit .exhibit-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-gap: 1px;
+}
+
+.exhibit .exhibit-grid .video-grid{
+    padding: 32px 24px;
+
+    }
+.exhibit .exhibit-grid .column {
+    display: flex;
+    padding: 32px 24px;
+    flex-direction: column;
+    
+    
+}
+
+.exhibit .exhibit-grid .column .fisma {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    background-color: rgb(212, 209, 209);
+    
+    
+}
+
+.exhibit .exhibit-grid .column .nownthen {
+    display: grid;
+    grid-template-columns: 35% 65%;
+    padding: 24px 0px;
+    
+    
+}
+
+.exhibit .exhibit-grid .column .it {
+    display: inline-block;
+    text-align: left;
+    margin: auto 0px;
+}
+
+.exhibit .video-grid h2 {
+    padding-top: 32px;
+}
+
+.exhibit .video-grid p {
+    padding-top: 24px;
+    padding-right: 1%;
+}
+
+
+.exhibit video {
+    border: 1px solid rgb(134, 134, 134);
+    
+}
+
+
+
+
+/* footer */
+
+.footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 16px 24px;
+    margin-bottom: 24px;
+    
+}
+.footer p {
+   margin-right: auto; 
+}   
+
+.footer li{
+    display: inline-block;
+    padding: 0px 16px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media querie */
+@media(max-width: 950px) {
+    /* start here */
+    .start-here {
+        grid-template-columns: 1fr;
+        padding: 0;        
+    }
+    .start-here div{
+        max-width: 100%;
+        text-align: center;
+        padding: 24px;
+    }
+    .start-here h2{
+        max-width: 100%;
+    }
+
+        /* practicing */
+    .practicing {
+        grid-template-columns: 1fr;
+         
+    }
+    .practicing .image-box {
+        display: none;
+    }
+
+    .practicing .practice-column div {
+        display: flex;
+        flex-direction: column;
+        }
+
+    .practicing .practice-column .it {
+        margin: auto 5%;
+            
+    }
+    
+    .practicing .practice-column .lecture {
+        background-color:white;
+        padding-bottom: 32px;
+        
+        
+        }
+
+    .deskimage {
+        display: none;
+    }
+    
+    .mobileimage {
+        display: block;
+    }
+    
+    
+    /* learning */
+
+    .learning .blocks div img {
+        display: none;
+    }
+
+    .learning p {
+        display: none;
+    }
+
+    .learning {
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
+        grid-gap: 10px;
+        border-top: 1px rgb(212, 209, 209) solid;
+        border-bottom: 1px rgb(212, 209, 209) solid;
+        
+    }
+
+    .learning .blocks{
+        grid-template-columns: 1fr;
+        margin: 0px ;
+        
+    }
+    .learning .blocks div{
+        background-color:rgb(212, 209, 209) ;
+        max-width: none;
+            
+    }
+
+    /* exhibit */
+
+    .exhibit .exhibit-grid{
+        grid-template-columns: 1fr;  
+    }
+    .exhibit .exhibit-grid .column {
+        display: none;
+        padding: 0px;
+    }
+
+    .exhibit .exhibit-grid .video-text {
+        display: none;
+    }
+    .exhibit {
+        display: grid;
+        grid-template-columns: 1fr;
+        border: none;
+    }
+    .exhibit .title {
+        
+        padding:48px 0px;
+        
+        
+    }
+    .exhibit .exhibit-grid .video-grid{
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+
+    /* footer */
+
+    .footer li{
+        display: none;
+        
+    }
+
+       
+}
